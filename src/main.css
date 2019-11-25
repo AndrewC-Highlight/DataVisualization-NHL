@@ -1,0 +1,70 @@
+/* MAIN CSS FILE FOR PROJECT */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body {
+    font-family: "Source Sans Pro";
+    font: 12pt;
+    line-height: 1.7rem;
+}
+svg {
+  display: block;
+  margin: auto;
+  padding: 20px;
+  margin-left: 40px;
+}
+
+main {
+  width: 800px;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+.chart-div {
+  text-align: left;
+  margin:auto;
+  padding:10px;
+}
+
+.axis-left1 line, 
+.axis-left1 path {
+  stroke: none;
+}
+
+.axis-left1 text {
+  font-weight: bold;
+  font-size: 7pt;
+  text-transform: uppercase;
+}
+
+.dot-label {
+  font-size: 8pt;
+}
+
+#tooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: rgb(75, 71, 71);
+  color: white;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+
+
+#tooltip.hidden {
+  display: none;
+}
+
+#tooltip p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}

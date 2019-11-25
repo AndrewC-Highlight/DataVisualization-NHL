@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+  <title>Assignment 4</title>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <main>
+    <section>
+      <h1>2018 - 2019 NHL Stats</h1>
+      <div id="tooltip" class="hidden">
+        <p id="value">Value</p>
+      </div>
+      <div class='chart-div'>
+        <h3>Team: Total Points</h3>
+        <svg id='chart1'></svg>
+        <p><strong>Team Totals:</strong> The 31 teams in the NHL finished with a range of 64 to 128 points.
+          The Tampa Bay Lightning finished the regular season with a record-tying 128 points. The team with the least
+          amount of points to clinch a playoff spot was the Colorado Avalance at 90 points.
+        </p>
+        <p><em>Note: * represent teams that made the playoffs.</em></p>
+        <h3>Team: Goals For vs Goals Against</h3>
+        <svg id='chart2'></svg>
+        <p><strong>Team Goals For vs Goals Against:</strong> Goals For and Goals Against can indicate a team's overall
+          performance.
+          Goals For are the total number of goals scored by the team, and Goals Against are the total number of goals
+          scored against the team.
+          Tampa Bay Lightning had the greatest differential at 98, while Los Angeles Kings had the worst at -60.
+        </p>
+        <h3>Team: Total Points vs Average Age</h3>
+        <svg id="chart3"></svg>
+        <p><strong>Team Total Points vs Average Age:</strong> All 31 teams find their average age between 26 and 30.
+          Most teams will find themselves
+          below an average age of 29. Playoff teams found themselves typically within ages 27 or 28, although some
+          outliers exist at 26 and 29.
+        </p>
+        <h3>Individual: Total Points - Top 20 Players</h3>
+        <svg id="chart4"></svg>
+        <p><strong>Individual: Total Points</strong> The top 20 players in the NHL 2018-2019 regular season were within
+          a range of 85 to 128 points.
+          Nikita Kucherov contributed the most points at 128, with 41 goals and 87 assists.
+        </p>
+        <h3>Individual: Goals vs Assists - Top 100 Players</h3>
+        <svg id="chart5"></svg>
+        <p><strong>Individual: Goals vs Assists</strong> Analyzing the top 100 players by points, the largest cluster of
+          players
+          lie below 35 goals and 50 assists. Generally, more players maintain more assists than goals. Some outliers
+          exist such as Alexander Ovechkin or John Tavares.
+        </p>
+        <h3>Summary</h3>
+        <p><strong>Overall Story</strong> The overall story of the dataset is primarily connected to high performances
+          and team/player total points.
+          Generally speaking, no immediately strong correlations are present in the data, something that was ultimately
+          figured out as it was completed.
+          That said, some loose connections can be made, such as the higher performing teams naturally having a higher
+          goal differential and with an average age of 27.</p>
+      </div>
+
+    </section>
+  </main>
+  <script src='./main.js'></script>
+</body>
+
+</html>
